@@ -103,14 +103,14 @@ elif [ "$ARCH" = "aarch64" ]; then
     platform="linux/arm64"
 fi
 
-IMAGE_ID=$(docker images -q docker.09090901.xyz/haroldli/xiaoya-tvbox:${TAG})
+IMAGE_ID=$(docker images -q docker.dreamj.filegear-sg.me/haroldli/xiaoya-tvbox:${TAG})
 echo -e "\e[32m下载最新Docker镜像，平台：${platform}, image tag: ${TAG}\e[0m"
 for i in 1 2 3 4 5
 do
-   docker pull --platform ${platform} docker.09090901.xyz/haroldli/xiaoya-tvbox:${TAG} && break
+   docker pull --platform ${platform} docker.dreamj.filegear-sg.me/haroldli/xiaoya-tvbox:${TAG} && break
 done
 
-NEW_IMAGE=$(docker images -q docker.09090901.xyz/haroldli/xiaoya-tvbox:${TAG})
+NEW_IMAGE=$(docker images -q docker.dreamj.filegear-sg.me/haroldli/xiaoya-tvbox:${TAG})
 if [ "$UPDATE" = "true" ] && [ "$IMAGE_ID" = "$NEW_IMAGE" ]; then
   echo -e "\e[33m镜像没有更新\e[0m"
   exit
@@ -119,9 +119,9 @@ fi
 echo -e "\e[33m重启应用\e[0m"
 docker rm -f xiaoya-tvbox 2>/dev/null
 if [ "$NET" = "" ]; then
-  docker run -d -p $PORT1:4567 -p $PORT2:80 -e ALIST_PORT=$PORT2 -v "$BASE_DIR":/data $MOUNT --restart=always --name=xiaoya-tvbox docker.09090901.xyz/haroldli/xiaoya-tvbox:${TAG}
+  docker run -d -p $PORT1:4567 -p $PORT2:80 -e ALIST_PORT=$PORT2 -v "$BASE_DIR":/data $MOUNT --restart=always --name=xiaoya-tvbox docker.dreamj.filegear-sg.me/haroldli/xiaoya-tvbox:${TAG}
 else
-  docker run -d $NET -v "$BASE_DIR":/data $MOUNT --restart=always --name=xiaoya-tvbox docker.09090901.xyz/haroldli/xiaoya-tvbox:${TAG}
+  docker run -d $NET -v "$BASE_DIR":/data $MOUNT --restart=always --name=xiaoya-tvbox docker.dreamj.filegear-sg.me/haroldli/xiaoya-tvbox:${TAG}
 fi
 
 echo -e "\n\e[32m请使用以下命令查看日志输出：\e[0m"
