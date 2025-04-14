@@ -1,4 +1,9 @@
 # NAME: Emby
-# HOST: 2
-HOST,emby.oceancloud.asia,emby
-HOST,nsfw.oceancloud.asia,Bybit
+# HOST: 3
+# HOST-SUFFIX: 2
+HOST,emby.enjoyit.eu.org,Emby
+HOST,emby.lcloud.wiki,Emby
+HOST,notnetflix.cos.cat,Emby
+HOST-SUFFIX,emby.oceancloud.asia,Emby
+HOST-SUFFIX,nsfw.oceancloud.asia,Emby
+HOST-SUFFIX,tanhuatv.site,direct
