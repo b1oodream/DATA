@@ -1,0 +1,18 @@
+# NAME: Browndust2
+# DOMAIN-SUFFIX: 16
+DOMAIN-SUFFIX,browndust2.com
+#游戏主域名
+DOMAIN-SUFFIX,neowiz.com
+#发行商neowiz核心服务
+DOMAIN-SUFFIX,pmang.plus
+#登录与账号服务
+DOMAIN-SUFFIX,pmang.com
+#登录备用域名
+DOMAIN-SUFFIX,toastusercontent.com
+#资源（部分韩系游戏使用）
+DOMAIN-SUFFIX,browndust
+#兜底关键词
+DOMAIN-SUFFIX,toast.com
+DOMAIN-SUFFIX,toastoven.net
+DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,unity3d.com
