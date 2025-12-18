@@ -7,6 +7,7 @@ DOMAIN-SUFFIX,neowiz.com
 DOMAIN-SUFFIX,pmang.plus
 #登录与账号服务
 DOMAIN-SUFFIX,pmang.com
+DOMAIN-SUFFIX,pmang.cloud
 #登录备用域名
 DOMAIN-SUFFIX,toastusercontent.com
 #资源（部分韩系游戏使用）
